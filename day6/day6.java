@@ -1,6 +1,7 @@
 
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 
@@ -31,7 +32,7 @@ import java.util.List;
 
 public class day6 {
 
-    public int[] topKFrequent(int[] nums, int k) {
+    public static int[] topKFrequent(int[] nums, int k) {
 
         //intalize frequce
         HashMap<Integer, Integer> freq = new HashMap<>();
@@ -71,6 +72,13 @@ public class day6 {
         return res;
 
 
+    }
+
+    public static void main(String[] args) {
+        int[] nums = {1,1,1,2,2,3};
+        int k = 2;
+        int[] result = topKFrequent(nums, k);
+        System.out.println(Arrays.toString(result));
     }
 
 
